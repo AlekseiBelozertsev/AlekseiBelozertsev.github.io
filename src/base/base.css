@@ -8,4 +8,6 @@
 
 body {
     background-color: $grey_bg;
+    margin: 0;
+    padding: 0;
 }

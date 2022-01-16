@@ -8,6 +8,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .dashboard_input {
+        max-width: 7em;
+    }
+
     .sidebar {
        width: 140px;
     }
@@ -18,7 +22,7 @@
     }
     
     .dashboard_main {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         margin-left: 8.7em;
     }
 
