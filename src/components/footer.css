@@ -1,0 +1,64 @@
+.dashboard_footer {
+    display: flex;
+    justify-content: space-around;
+    grid-area: 5 / 1 / span 1 / span 4;
+    border-top: .05em solid $purple;
+    border-radius: .5em;
+    padding-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+       width: 140px;
+    }
+
+    .sidebar_user {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .dashboard_main {
+        grid-template-columns: auto;
+        margin-left: 8.7em;
+    }
+
+    .dashboard_title {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    
+    
+    .stats_item1 {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    
+    .stats_item2 {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    
+    .stats_item3 {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+    
+    .stats_item4 {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+
+    .dashboard_chart_wrapper {
+        grid-area: 6 / 1 / span 1 / span 1;
+    }
+
+    .top_categories_window {
+        grid-area: 7 / 1 / span 1 / span 1;
+    }
+
+    .table_wrapper {
+        grid-area: 8 / 1 / span 1 / span 1;
+    }
+
+    .dashboard_footer {
+        grid-area: 9 / 1 / span 1 / span 1;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

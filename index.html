@@ -13,19 +13,20 @@
 </head>
 <body> 
     <div class="sidebar" id="sidebar">
-        <div class="sidebar_disabled" id="sidebarButton"></div>
+        <div class="list_1st_wrapper">
             <h3 class="sidebar_head">Crappy Panel</h3>
             <a href="" type="button" class="active"><i class="fas fa-igloo"></i>Home</a> 
             <a href="" type="button" class="inactive"><i class="far fa-sticky-note"></i>Posts</a> </li>
             <a href="" type="button" class="inactive"><i class="fas fa-th-large"></i>Categories</a> 
             <a href="" type="button" class="inactive"><i class="fas fa-photo-video"></i>Media</a> 
             <a href="" type="button" class="inactive"><i class="far fa-file"></i>Pages</a> 
-            <a href="" type="button" class="sidebar_comments active inactive"><i class="fas fa-comment-alt"></i>Comments</a> 
+            <a href="" type="button" class="sidebar_comments  comments_inactive"><i class="fas fa-comment-alt"></i>Comments</a>
             <h3>system</h3>
             <a href="" type="button" class="inactive"><i class="fas fa-ghost"></i>Appearence</a>
             <a href="" type="button" class="inactive"><i class="fas fa-cubes"></i>Extensions</a>
             <a href="" type="button" class="inactive"><i class="fas fa-users"></i>Users</a>
             <a href="" type="button" class="inactive"><i class="fas fa-cogs"></i>Settings</a>
+        </div>
         <div class="sidebar_user">
             <div class="avatar_ellipse">
                 <div class="avatar"></div>
@@ -58,13 +59,15 @@
             </div>
         </div>
 
+        <!-- Начало грида -->
+
         <div class="dashboard_main">
 
+            <!-- Первый элемент грида -->
             <h3 class="dashboard_title">Dashboard</h3>
 
-            <div class="stats">
-
-                <div class="stats_item">
+             <!-- Второй элемент грида -->
+                <div class="stats_item1">
                     <div class="stats_icon_wrapper">
                         <div class="stats_ellipse visits"></div>
                     </div>
@@ -75,11 +78,12 @@
                             <i class="fas fa-long-arrow-alt-right decrease"></i>
                             <span class="stats_percent">0.2</span>
                             <span>%</span>
+                            <span>Last month</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="stats_item">
+                 <!-- Третий элемент грида -->
+                <div class="stats_item2">
                     <div class="stats_icon_wrapper">
                         <div class="stats_ellipse article"></div>
                     </div>
@@ -87,14 +91,15 @@
                         <h3 class="stats_total">1267</h3>
                         <span class="stats_title">Total articles</span>
                         <div class="percent_wrapper">
-                            <i class="fas fa-long-arrow-alt-right increase"></i>
+                            <i class="fas fa-long-arrow-alt-right static"></i>
                             <span class="stats_percent">40.2</span>
                             <span>%</span>
+                            <span>Last month</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="stats_item">
+                 <!-- Четвертый элемент грида -->
+                <div class="stats_item3">
                     <div class="stats_icon_wrapper">
                         <div class="stats_ellipse subscription"></div>
                     </div>
@@ -105,11 +110,12 @@
                             <i class="fas fa-long-arrow-alt-right increase"></i>
                             <span class="stats_percent">15.2</span>
                             <span>%</span>
+                            <span>Last month</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="stats_item">
+                 <!-- Пятый элемент грида -->
+                <div class="stats_item4">
                     <div class="stats_icon_wrapper">
                         <div class="stats_ellipse total_autors"></div>
                     </div>
@@ -120,18 +126,205 @@
                             <i class="fas fa-long-arrow-alt-right decrease"></i>
                             <span class="stats_percent">1.44</span>
                             <span>%</span>
+                            <span>Last month</span>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
+             <!-- Шестой элемент грида -->
             <div class="dashboard_chart_wrapper">
-                <canvas id="myChart"></canvas>
+                <canvas id="dashboardChart"></canvas>
             </div>
-
+             <!-- Седьмой элемент грида -->
+            <div class="top_categories_window">
+                <div class="title_wrapper">
+                    <h4>Top categories</h4>
+                    <span>28 categories, 1400 posts</span>
+                </div>
+                <div class="category_wrapper">
+                    <div class="category_title_wrapper">
+                        <h5>Modern society</h5>
+                        <span>How not to die today</span>
+                    </div>
+                    <div class="category_nums_wrapper">
+                        <h5>15K</h5>
+                        <div class="category_ellipse">
+                            <span>+100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_wrapper">
+                    <div class="category_title_wrapper">
+                        <h5>Life sucks</h5>
+                        <span>Get used to it</span>
+                    </div>
+                    <div class="category_nums_wrapper">
+                        <h5>8,2K</h5>
+                        <div class="category_ellipse">
+                            <span>+222</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_wrapper">
+                    <div class="category_title_wrapper">
+                        <h5>Garbage hunting</h5>
+                        <span>Build yourself a house</span>
+                    </div>
+                    <div class="category_nums_wrapper">
+                        <h5>6,5K</h5>
+                        <div class="category_ellipse">
+                            <span>+470</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_wrapper">
+                    <div class="category_title_wrapper">
+                        <h5>Benising</h5>
+                        <span>How to dance like Ebin</span>
+                    </div>
+                    <div class="category_nums_wrapper">
+                        <h5>115M</h5>
+                        <div class="category_ellipse">
+                            <span>+12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Восьмой элемент грида -->
+            <div class="table_wrapper">
+                <table cellspacing="0">
+                    <tr class="row_head">
+                        <td class="table_pic">Thumbnail</td>
+                        <td class="table_title">Title</td>
+                        <td class="table_user">Author</td>
+                        <td class="table_user_status">Status</td>
+                        <td class="date_of_change">Date</td>
+                        <td class="table_action">Action</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://image.freepik.com/free-photo/river-countryside-rural-scenic-tourism_1417-38.jpg" alt=""></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                        <td>
+                            <div class="table_author">
+                                <div class="avatar_author">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="user_info">
+                                    <p class="user_name">Jane Doe</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status_ellipse">
+                                <span class=""></span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="date"></span>
+                        </td>
+                        <td><i class="action_icon">...</i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://image.freepik.com/free-photo/wooden-mannequin-presenting-invisible-object_1401-337.jpg" alt=""></td>
+                        <td>Eveniet consectetur asperiores quibusdam minima quas.</td>
+                        <td>
+                            <div class="table_author">
+                                <div class="avatar_author">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="user_info">
+                                    <p class="user_name">John Toe</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status_ellipse">
+                                <span class=""></span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="date"></span>
+                        </td>
+                        <td><i class="action_icon">...</i></td>
+                    </tr>
+                    <tr>   
+                        <td><img src="https://image.freepik.com/free-photo/mountain-journey_1163-3320.jpg" alt=""></td>
+                        <td>Numquam pariatur, totam vitae, cumque magnam dolores ea voluptas.</td>
+                        <td>
+                            <div class="table_author">
+                                <div class="avatar_author">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="user_info">
+                                    <p class="user_name">William Shakeit</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status_ellipse">
+                                <span class=""></span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="date"></span>
+                        </td>
+                        <td><i class="action_icon">...</i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://image.freepik.com/free-photo/blue-morning-natural-mountains-bamboo_1417-32.jpg" alt=""></td>
+                        <td>Corporis.</td>
+                        <td>
+                            <div class="table_author">
+                                <div class="avatar_author">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="user_info">
+                                    <p class="user_name">Buddy Coal</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status_ellipse">
+                                <span class=""></span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="date"></span>
+                        </td>
+                        <td><i class="action_icon">...</i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://image.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-71.jpg" alt=""></td>
+                        <td>Asperiores quibusdam minima quas quis adipisci explicabo.</td>
+                        <td>
+                            <div class="table_author">
+                                <div class="avatar_author">
+                                    <div class="avatar"></div>
+                                </div>
+                                <div class="user_info">
+                                    <p class="user_name">Critical Poo</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="status_ellipse">
+                                <span class=""></span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="date"></span>
+                        </td>
+                        <td><i class="action_icon">...</i></td>
+                    </tr>
+                </table>
+            </div>
+            <footer class="dashboard_footer">
+                <span>My Crappy Panel TM</span>
+                <span>Built with pain by me</span>
+                <span>balalajka846@gmail.com</span>
+            </footer>
         </div>
     </div>
-    <script src="./src/javaScript/sidebar.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
+    <script src="./src/javaScript/chart.js"></script>
 </body>
 </html>

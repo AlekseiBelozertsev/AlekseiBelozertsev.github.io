@@ -1,9 +1,8 @@
-@media (max-width: 376px) {
-    canvas {
-        width: 285px;
-        height: 400px;
-        margin: .5em;
-        border-radius: .5em;
-        background-color: $white;
-    }
+.dashboard_chart_wrapper {
+    grid-area: 3 / 1 / span 1 / span 3;
+}
+
+canvas {
+    border-radius: .5em;
+    background-color: $white;
 }

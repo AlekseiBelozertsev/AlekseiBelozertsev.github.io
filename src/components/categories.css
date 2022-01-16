@@ -1,0 +1,32 @@
+.top_categories_window {
+    display: flex;
+    overflow-x: auto;
+    flex-direction: column;
+    grid-area: 3 / 4 / span 1 / span 1;
+    background-color: $white;
+    min-width: 250px;
+    border-radius: .5em;
+    padding: .5em;
+    text-align: left;
+}
+
+.title_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+.category_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: .05em solid $grey_bg;
+    padding: .3em;
+}
+
+.category_ellipse {
+    background-color: $purple;
+    text-align: center;
+    border-radius: .5em;
+    padding: .17em;
+}

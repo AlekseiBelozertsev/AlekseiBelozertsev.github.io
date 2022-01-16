@@ -10,10 +10,17 @@ h3 {
     margin: 0;
 }
 
+h4,
+h5 {
+    font-family: Inter;
+    margin: .2em;
+}
+
 span {
     font-family: Inter;
     color: $grey_text;
-    font-size: .7em;
+    font-size: .9em;
+    margin: .2em;
 }
 
 .dashboard_title {
@@ -56,22 +63,15 @@ a,
     color: $inactive_item;
 }
 
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    line-height: 45px;
-}
-
 p {
     margin: 0;
     padding: 0;
     font-family: Inter;
     line-height: 15px;
+    font-size: 1.3em;
 }
 
-.grey_text {
+.grey_text{
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
