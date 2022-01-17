@@ -7,7 +7,7 @@ function showSidebar() {
   if(sidebar.style.display === 'flex') {
     sidebar.style.display = 'none';   sidebarShowFolder.classList.remove('fa-folder-open')
     sidebarShowFolder.classList.add('fa-folder')
-    dashboard.style.marginLeft = '0em'
+    dashboard.style.marginLeft = '0'
   } else {
      sidebar.style.display = 'flex';
      sidebarShowFolder.classList.remove('fa-folder')
