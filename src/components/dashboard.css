@@ -56,9 +56,12 @@
 }
 
 .fa-sun,
-.fa-bell {
+.fa-bell,
+.fa-folder,
+.fa-folder-open {
     font-size: 1.7em;
     margin-left: .36em;
+    cursor: pointer;
     color: $grey_text;
 }
 
