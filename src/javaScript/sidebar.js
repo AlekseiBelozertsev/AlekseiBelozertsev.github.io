@@ -11,6 +11,7 @@ function showSidebar() {
   } else {
      sidebar.style.display = 'flex';
      sidebarShowFolder.classList.remove('fa-folder')
-sidebarShowFolder.classList.add('fa-folder-open')  
+     sidebarShowFolder.classList.add('fa-folder-open')  
+     dashboard.style.marginLeft = '10em'
   } 
 }
