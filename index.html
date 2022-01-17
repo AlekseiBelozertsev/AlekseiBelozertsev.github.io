@@ -41,7 +41,10 @@
     <div class="dashboard">
 
         <div class="dashboard_header">
-            <input type="text" id="search" name="keywords" placeholder="" class="dashboard_input">
+            <div class="input_wrapper">
+                <input type="text" id="search" name="keywords" placeholder="" class="dashboard_input">
+                <i class="fas fa-folder-open" id="sidebarShowFolder"></i>
+            </div>
             <div class="header_items_wrapper">
                 <select id="lang" name="lang">
                     <a href=""><option value="EN" selected>EN</option></a>
@@ -326,5 +329,6 @@
     </div>
     <script src="./node_modules/chart.js/dist/chart.js"></script>
     <script src="./src/javaScript/chart.js"></script>
+    <script src="./src/javaScript/sidebar.js"></script>
 </body>
 </html>
