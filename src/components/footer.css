@@ -9,11 +9,21 @@
 
 @media only screen and (max-width: 600px) {
     .dashboard_input {
-        max-width: 7em;
+        max-width: 4em;
     }
 
     .sidebar {
-       width: 140px;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        float: left;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 6em .5em .5em .5em;
+        background-color: $sidebar_color;
+        z-index: 25;
+        color: $white;
     }
 
     .sidebar_user {
@@ -23,7 +33,7 @@
     
     .dashboard_main {
         grid-template-columns: 1fr;
-        margin-left: 8.7em;
+        /* margin-left: 8.7em; */
     }
 
     .dashboard_title {

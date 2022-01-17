@@ -12,6 +12,27 @@
     <title>Document</title>
 </head>
 <body> 
+    <div class="dashboard_header">
+        <div class="input_wrapper">
+            <input type="text" id="search" name="keywords" placeholder="" class="dashboard_input">
+            <i class="fas fa-folder" id="sidebarShowFolder"></i>
+        </div>
+        <div class="header_items_wrapper">
+            <select id="lang" name="lang">
+                <a href=""><option value="EN" selected>EN</option></a>
+                <a href=""><option value="RU">RU</option></a>
+            </select>
+            <a href="#" class="nots_ellipse active_nots">
+               <i class="fas fa-bell"></i>
+            </a>
+            <a href="#" type="button" class="light_ellipse">
+                <i class="fas fa-sun"></i>
+            </a>
+            <div class="avatar_ellipse">
+                <div class="avatar"></div>
+            </div>
+        </div>
+    </div>
     <div class="sidebar" id="sidebar">
         <div class="list_1st_wrapper">
             <h3 class="sidebar_head">Crappy Panel</h3>
@@ -39,28 +60,6 @@
     </div>
 
     <div class="dashboard">
-
-        <div class="dashboard_header">
-            <div class="input_wrapper">
-                <input type="text" id="search" name="keywords" placeholder="" class="dashboard_input">
-                <i class="fas fa-folder-open" id="sidebarShowFolder"></i>
-            </div>
-            <div class="header_items_wrapper">
-                <select id="lang" name="lang">
-                    <a href=""><option value="EN" selected>EN</option></a>
-                    <a href=""><option value="RU">RU</option></a>
-                </select>
-                <a href="#" class="nots_ellipse active_nots">
-                   <i class="fas fa-bell"></i>
-                </a>
-                <a href="#" type="button" class="light_ellipse">
-                    <i class="fas fa-sun"></i>
-                </a>
-                <div class="avatar_ellipse">
-                    <div class="avatar"></div>
-                </div>
-            </div>
-        </div>
 
         <!-- Начало грида -->
 
