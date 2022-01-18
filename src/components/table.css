@@ -13,16 +13,6 @@ img {
     height: 6em;
 }
 
-.avatar_author {
-    position: relative;
-    align-self: center;
-    background-color: $grey_bg;
-    margin: .3em;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-}
-
 table {
     white-space: nowrap;
     border-radius: .5em;
@@ -52,3 +42,34 @@ tr {
     background-color: $grey_bg;
     border-color: $grey_bg;
 }
+
+.avatar_author {
+    position: relative;
+    align-self: center;
+    background-color: $grey_bg;
+    margin: .3em;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.status_ellipse_active {
+    width: fit-content;
+    text-align: left;
+    padding: .2em;
+    border-radius: 5px;
+    background-color: $purple;
+}
+
+.pending {
+    width: fit-content;
+    text-align: left;
+    padding: .2em;
+    border-radius: 5px;
+    background-color: $yellow;
+}
+
+.action_td {
+    text-align: center;
+}
+
